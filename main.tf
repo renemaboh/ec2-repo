@@ -1,9 +1,6 @@
-resource "aws_instance" "my_vm" {
- ami           = var.ami //Ubuntu AMI
- instance_type = var.instance_type
+resource "aws_s3_bucket" 
+ bucket= "my test bucket"         
 
  tags = {
-   Name = var.name_tag,
+   Name = "my bucket"
  }
-}
-
